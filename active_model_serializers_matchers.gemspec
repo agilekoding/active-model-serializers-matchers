@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = ActiveModelSerializersMatchers::VERSION
   spec.authors       = ["francisco delgado"]
   spec.email         = ["francisco.delgado@agilekoding.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = "Making ActiveModelSerializers specs easy and maintainable"
+  spec.summary       = "Making ActiveModelSerializers specs easy and maintainable"
+  spec.homepage      = "https://github.com/franciscodelgadodev/active_model_seializers_matchers"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -18,6 +18,11 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
+  spec.required_ruby_version = '>= 1.9.3'
+
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
+  spec.add_development_dependency 'rails',       '~> 3.0'
+  spec.add_development_dependency 'cucumber',    '~> 1.1'
+  spec.add_development_dependency 'rspec-rails', '>= 2.13.1', '< 3'
 end
